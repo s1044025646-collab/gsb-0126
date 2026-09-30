@@ -1,0 +1,21 @@
+{
+  "name": "bars-cutting-backend",
+  "version": "1.0.0",
+  "description": "Local one-dimensional cutting stock and remnant reuse backend",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build && node --no-warnings dist/server.js",
+    "cli": "npm run build && node --no-warnings dist/cli.js",
+    "demo": "npm run build && node --no-warnings dist/cli.js demo",
+    "stop": "node --no-warnings dist/stop.js",
+    "test": "npm run build && node --no-warnings --test \"dist/tests/*.test.js\""
+  },
+  "keywords": ["cutting-stock", "sqlite", "typescript"],
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2"
+  }
+}
