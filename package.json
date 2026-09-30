@@ -1,0 +1,15 @@
+{
+  "name": "cutstock-1d",
+  "version": "1.0.0",
+  "description": "One-dimensional cutting-stock / remnant-reuse backend (API + CLI), fictional profile orders, no real equipment",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22.5.0" },
+  "bin": { "cutstock": "src/cli/main.ts" },
+  "scripts": {
+    "start": "node src/server/main.ts",
+    "demo": "node scripts/demo.ts",
+    "test": "node --test --experimental-sqlite test/",
+    "clean": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/clean.ps1"
+  }
+}
